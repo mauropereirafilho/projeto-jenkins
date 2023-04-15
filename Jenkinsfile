@@ -11,7 +11,7 @@ pipeline {
         stage ('Buildando a imagem Docker') {
             steps {
                 script {
-                    dockerapp = docker.build("pereirafmauro/desafio-devops", '-f ./src/Docker/Dockerfile ./src/Docker')
+                    dockerapp = docker.build("pereirafmauro/desafio-devops", '-f ./Docker/Dockerfile ./Docker')
                 }
             }
         }
