@@ -4,7 +4,7 @@ Fala galera, este repositório se remete há um caso de estudo, onde quis aprofu
 
 ![alt tag](https://github.com/mauropereirafilho/projeto-jenkins/blob/cb1d1053bf5fccf7de9160bb24e4328e26d9fbf7/jenkins.jpg)
 
-* Baseado neste repositório Git, teremos um **Pipeline** do Jenkins.
+* Baseado neste repositório Git, teremos um [Pipeline](https://github.com/mauropereirafilho/projeto-jenkins/blob/main/Jenkinsfile) do **Jenkins**.
 * A pipeline valida o repositório, builda a imagem **Docker** baseado no [Dockerfile](https://github.com/mauropereirafilho/projeto-jenkins/blob/main/Docker/Dockerfile) da pasta **Docker**.
 * Depois realiza o push da imagem, para nosso [registry](https://hub.docker.com/u/pereirafmauro) do Docker.
 * E finaliza, realizando o Deploy desta imagem, em um [Deployment](https://github.com/mauropereirafilho/projeto-jenkins/blob/main/Kubernetes/deployment.yaml) do **Kubernetes**, especificado na pasta **Kubernetes**.
