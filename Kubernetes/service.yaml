@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: desafio-devops-service
+  namespace: desafio-devops
+spec:
+  selector:
+    app: deployment-idwall
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+  type: NodePort
