@@ -29,7 +29,7 @@ pipeline {
         
         stage ('Deploy no Kubernetes') {
             steps {
-                withKubeconfig ([credentialsID: 'kubeconfig'])
+                withKubeConfig ([credentialsID: 'kubeconfig']) {
                     sh 'kubectl create -f ./Kubernetes'
                 }
 
